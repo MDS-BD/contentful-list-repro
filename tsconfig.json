@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"allowJs": false,
+		"exactOptionalPropertyTypes": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"preserveConstEnums": true,
+		"resolveJsonModule": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"noUncheckedSideEffectImports": true,
+		"libReplacement": false,
+		"allowSyntheticDefaultImports": true,
+		
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"module": "es2022",
+		"moduleResolution": "bundler",
+		"target": "es6",
+
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+
+		"noEmit": false,
+
+		"jsxImportSource": "preact",
+		"paths": {
+			"react": ["./node_modules/preact/compat/"],
+			"react-dom": ["./node_modules/preact/compat/"],
+			"react-dom/test-utils": ["./node_modules/preact/test-utils/"],
+			"react/jsx-runtime": ["./node_modules/preact/jsx-runtime"]
+		}
+	}
+}

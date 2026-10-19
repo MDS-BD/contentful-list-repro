@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - '@contentful/app-sdk@4.74.0'

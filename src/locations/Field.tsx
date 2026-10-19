@@ -3,13 +3,10 @@ import type { JSX } from "preact";
 
 import { FieldWrapper } from "@contentful/default-field-editors";
 
-
 import {
 	MultipleResourceReferenceEditor,
 } from "@contentful/field-editor-reference";
 import { useAutoResizer, useSDK } from "@contentful/react-apps-toolkit";
-
-// import { FieldWrapper } from "../components/FieldWrapper.js";
 
 
 const ListHelper = (): JSX.Element => {
@@ -26,7 +23,6 @@ const ListHelper = (): JSX.Element => {
 	return (
 		<FieldWrapper sdk={sdk} name={field.name} showFocusBar={false}>
 			<MultipleResourceReferenceEditor
-				// FIXME: what's this?
 				apiUrl={""}
 				isInitiallyDisabled={false}
 				parameters={parameters}
@@ -36,7 +32,7 @@ const ListHelper = (): JSX.Element => {
 				sdk={sdk}
 				viewType="link"
 				hasCardEditActions
-				renderCustomCard={(props) => (<>Foobar</>)}
+				renderCustomCard={() => (<>Foobar</>)}
 			/>
 		</FieldWrapper>
 	);
